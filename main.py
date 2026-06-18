@@ -21,3 +21,11 @@ def read_root():
 @app.get("/greet")
 def greet_user(name: str):
     return {"greeting": f"Hello, {name}! Your Python backend successfully processed this request!"}
+
+
+# Add this to the absolute bottom of main.py:
+
+@app.get("/calculate")
+def add_numbers(num1: float, num2: float):
+    total = num1 + num2
+    return {"result": f"{num1} + {num2} = {total}"}
