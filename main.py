@@ -15,3 +15,9 @@ app.add_middleware(
 @app.get("/")
 def read_root():
     return {"message": "Hello from the Python backend!"}
+
+# Keep your existing code above, just add this to the bottom:
+
+@app.get("/greet")
+def greet_user(name: str):
+    return {"greeting": f"Hello, {name}! Your Python backend successfully processed this request!"}
