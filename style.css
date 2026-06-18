@@ -1,0 +1,24 @@
+/* This styles the entire background and font of the page */
+body {
+    background-color: #f4f7f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* This styles your main header heading */
+h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* This styles the paragraph text underneath */
+p {
+    color: #7f8c8d;
+    font-size: 1.2rem;
+}
